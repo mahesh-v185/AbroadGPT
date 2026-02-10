@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "testuser@example.com",
+      "password_hash": "$2a$12$Jxz8MtvGJP5KoKlMifrSs.og/qofO7hnviV7uAg35srY5GRktz4OK",
+      "full_name": "Test User",
+      "track_id": 1,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:30.930Z"
+    },
+    {
+      "id": 2,
+      "email": "newuser123@example.com",
+      "password_hash": "$2a$12$Nx42aqwSJkqo8J6nkOmNde.fF8u/H9E8s6jx362g5ucWaxdW6IoI6",
+      "full_name": "New User",
+      "track_id": 1,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:53.423Z"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 1,
+      "name": "CSCA Core Sciences",
+      "description": "Comprehensive CSCA sciences preparation",
+      "code": "CSCA",
+      "created_at": "2026-02-08T17:08:20.698Z"
+    },
+    {
+      "id": 2,
+      "name": "Chinese Scholarship Assessment",
+      "description": "Preparation for CSC and Chinese university entrance exams",
+      "code": "CHINESE_SCHOLARSHIP",
+      "created_at": "2026-02-08T17:08:20.704Z"
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "track_id": 1,
+      "name": "Mathematics",
+      "description": "Advanced mathematics for CSCA preparation",
+      "order_index": 1,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    },
+    {
+      "id": 2,
+      "track_id": 1,
+      "name": "Physics",
+      "description": "Physics concepts and problem solving",
+      "order_index": 2,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    },
+    {
+      "id": 3,
+      "track_id": 1,
+      "name": "Chemistry",
+      "description": "Chemistry fundamentals and applications",
+      "order_index": 3,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    }
+  ],
+  "modules": [
+    {
+      "id": 1,
+      "subject_id": 1,
+      "title": "Algebra and Functions",
+      "description": "Linear equations, quadratic functions, and polynomials",
+      "order_index": 1,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    },
+    {
+      "id": 2,
+      "subject_id": 1,
+      "title": "Calculus",
+      "description": "Limits, derivatives, and integration",
+      "order_index": 2,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    },
+    {
+      "id": 3,
+      "subject_id": 1,
+      "title": "Statistics and Probability",
+      "description": "Data analysis, probability theory, and statistical inference",
+      "order_index": 3,
+      "is_active": true,
+      "created_at": "2026-02-08T17:08:20.704Z"
+    }
+  ]
+}

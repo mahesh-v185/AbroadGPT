@@ -1,0 +1,536 @@
+{
+  "track": "CHINESE_SCHOLARSHIP",
+  "subjects": [
+    {
+      "id": 101,
+      "name": "Mathematics",
+      "modules": [
+        {
+          "id": 101,
+          "title": "Algebra (Linear, Quadratic Equations)",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2001,
+                "questionText": "Solve for x: 2x + 5 = 13",
+                "options": ["x = 3", "x = 4", "x = 8", "x = 9"],
+                "correctAnswer": "x = 4",
+                "explanation": "2x + 5 = 13 → 2x = 13 - 5 → 2x = 8 → x = 4",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2002,
+                "questionText": "What is the discriminant of the quadratic equation x² - 5x + 6 = 0?",
+                "options": ["1", "25", "49", "16"],
+                "correctAnswer": "1",
+                "explanation": "Discriminant = b² - 4ac = (-5)² - 4(1)(6) = 25 - 24 = 1",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2003,
+                "questionText": "Find the roots of x² - 8x + 15 = 0",
+                "options": ["3 and 5", "2 and 6", "1 and 7", "4 and 4"],
+                "correctAnswer": "3 and 5",
+                "explanation": "x² - 8x + 15 = (x - 3)(x - 5) = 0 → x = 3 or x = 5",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 120
+              },
+              {
+                "id": 2004,
+                "questionText": "If 3x - 7 = 2x + 5, what is the value of x?",
+                "options": ["10", "12", "14", "16"],
+                "correctAnswer": "12",
+                "explanation": "3x - 7 = 2x + 5 → 3x - 2x = 5 + 7 → x = 12",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2005,
+                "questionText": "Which of the following quadratic equations has equal roots?",
+                "options": ["x² - 6x + 9 = 0", "x² + 5x + 6 = 0", "x² - 4x + 3 = 0", "x² + 2x + 1 = 0"],
+                "correctAnswer": "x² - 6x + 9 = 0",
+                "explanation": "Equal roots occur when discriminant = 0. For x² - 6x + 9 = 0: b² - 4ac = 36 - 36 = 0",
+                "difficulty": 3,
+                "points": 10,
+                "timeLimitSeconds": 120
+              }
+            ],
+            "coding": [
+              {
+                "id": 3001,
+                "questionText": "Write a program to solve a quadratic equation ax² + bx + c = 0. The program should handle all cases (real and complex roots).",
+                "sampleInput": "1 -5 6",
+                "expectedOutput": "Roots: x1 = 3.0, x2 = 2.0",
+                "difficulty": 2,
+                "points": 20,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        },
+        {
+          "id": 102,
+          "title": "Functions & Graphs",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2010,
+                "questionText": "What is the domain of the function f(x) = 1/(x - 3)?",
+                "options": ["All real numbers", "All real numbers except 3", "x > 3", "x < 3"],
+                "correctAnswer": "All real numbers except 3",
+                "explanation": "The denominator cannot be zero, so x - 3 ≠ 0 → x ≠ 3",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2011,
+                "questionText": "If f(x) = 2x + 1, what is f(3)?",
+                "options": ["5", "6", "7", "8"],
+                "correctAnswer": "7",
+                "explanation": "f(3) = 2(3) + 1 = 6 + 1 = 7",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 103,
+          "title": "Trigonometry",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2020,
+                "questionText": "What is sin(30°)?",
+                "options": ["0", "1/2", "√3/2", "1"],
+                "correctAnswer": "1/2",
+                "explanation": "sin(30°) = 1/2",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2021,
+                "questionText": "If cos(θ) = 3/5, what is sin(θ)?",
+                "options": ["4/5", "3/4", "5/3", "2/5"],
+                "correctAnswer": "4/5",
+                "explanation": "sin²(θ) + cos²(θ) = 1 → sin²(θ) = 1 - (3/5)² = 1 - 9/25 = 16/25 → sin(θ) = 4/5",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              }
+            ]
+          }
+        },
+        {
+          "id": 104,
+          "title": "Probability & Statistics",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2030,
+                "questionText": "A fair coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+                "options": ["1/8", "3/8", "1/2", "3/4"],
+                "correctAnswer": "3/8",
+                "explanation": "Total outcomes = 2³ = 8. Favorable outcomes = HHT, HTH, THH = 3. P = 3/8",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2031,
+                "questionText": "What is the mean of the numbers 2, 4, 6, 8, 10?",
+                "options": ["4", "5", "6", "7"],
+                "correctAnswer": "6",
+                "explanation": "Mean = (2 + 4 + 6 + 8 + 10)/5 = 30/5 = 6",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 105,
+          "title": "Basic Calculus",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2040,
+                "questionText": "What is the derivative of f(x) = x² + 3x - 2?",
+                "options": ["2x + 3", "x + 3", "2x - 2", "x² + 3"],
+                "correctAnswer": "2x + 3",
+                "explanation": "f'(x) = d/dx(x²) + d/dx(3x) - d/dx(2) = 2x + 3 - 0 = 2x + 3",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2041,
+                "questionText": "What is lim(x→2) (x² - 4)/(x - 2)?",
+                "options": ["0", "2", "4", "undefined"],
+                "correctAnswer": "4",
+                "explanation": "Factor numerator: (x² - 4) = (x - 2)(x + 2). Cancel (x - 2): lim(x→2) (x + 2) = 4",
+                "difficulty": 3,
+                "points": 10,
+                "timeLimitSeconds": 120
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "English",
+      "modules": [
+        {
+          "id": 106,
+          "title": "Reading Comprehension",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2100,
+                "questionText": "Passage: 'The rapid advancement of artificial intelligence has transformed various industries, from healthcare to finance. Machine learning algorithms can now diagnose diseases with remarkable accuracy and predict market trends with unprecedented precision.'\n\nWhat is the main topic of this passage?",
+                "options": [
+                  "Healthcare improvements",
+                  "Financial market analysis",
+                  "AI transformation of industries",
+                  "Machine learning algorithms"
+                ],
+                "correctAnswer": "AI transformation of industries",
+                "explanation": "The passage discusses how AI has transformed multiple industries, making this the main topic.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 120
+              }
+            ]
+          }
+        },
+        {
+          "id": 107,
+          "title": "Grammar & Sentence Correction",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2110,
+                "questionText": "Which sentence is grammatically correct?",
+                "options": [
+                  "Neither of the students have finished their homework.",
+                  "Neither of the students has finished his homework.",
+                  "Neither of the students has finished their homework.",
+                  "Neither of the students have finished his homework."
+                ],
+                "correctAnswer": "Neither of the students has finished their homework.",
+                "explanation": "'Neither' takes a singular verb ('has'). 'Their' is preferred for gender neutrality.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2111,
+                "questionText": "Identify the error: 'The team are playing well and is likely to win.'",
+                "options": [
+                  "The team are",
+                  "playing well",
+                  "and is",
+                  "to win"
+                ],
+                "correctAnswer": "and is",
+                "explanation": "Subject-verb agreement error. Should be 'The team are playing well and are likely to win.'",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 108,
+          "title": "Vocabulary",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2120,
+                "questionText": "What does 'ubiquitous' mean?",
+                "options": ["Rare", "Everywhere", "Ancient", "Modern"],
+                "correctAnswer": "Everywhere",
+                "explanation": "Ubiquitous means present, appearing, or found everywhere.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2121,
+                "questionText": "Choose the best synonym for 'ephemeral':",
+                "options": ["Permanent", "Temporary", "Important", "Large"],
+                "correctAnswer": "Temporary",
+                "explanation": "Ephemeral means lasting for a very short time; temporary.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 109,
+          "title": "Essay Writing",
+          "questions": {
+            "essay": [
+              {
+                "id": 3002,
+                "questionText": "Write an essay (250-300 words) on: 'The importance of international education in the 21st century'",
+                "rubric": {
+                  "content": "40%",
+                  "organization": "20%",
+                  "grammar": "20%",
+                  "vocabulary": "20%"
+                },
+                "difficulty": 3,
+                "points": 50,
+                "timeLimitSeconds": 1800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Logical & Quantitative Reasoning",
+      "modules": [
+        {
+          "id": 110,
+          "title": "Number Series",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2200,
+                "questionText": "Complete the series: 2, 6, 12, 20, 30, ?",
+                "options": ["40", "42", "44", "46"],
+                "correctAnswer": "42",
+                "explanation": "Pattern: +4, +6, +8, +10, +12. So 30 + 12 = 42",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              },
+              {
+                "id": 2201,
+                "questionText": "Find the missing number: 1, 4, 9, 16, 25, ?",
+                "options": ["30", "35", "36", "49"],
+                "correctAnswer": "36",
+                "explanation": "Series of perfect squares: 1², 2², 3², 4², 5², 6² = 36",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 111,
+          "title": "Pattern Recognition",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2210,
+                "questionText": "If A = 1, B = 2, C = 3, ..., what is the value of 'CAB'?",
+                "options": ["312", "123", "231", "321"],
+                "correctAnswer": "312",
+                "explanation": "C = 3, A = 1, B = 2, so CAB = 312",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 112,
+          "title": "Data Interpretation",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2220,
+                "questionText": "A company's sales increased from $100,000 in 2020 to $150,000 in 2023. What is the percentage increase?",
+                "options": ["25%", "50%", "75%", "100%"],
+                "correctAnswer": "50%",
+                "explanation": "Percentage increase = ((150,000 - 100,000) / 100,000) × 100 = 50%",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              }
+            ]
+          }
+        },
+        {
+          "id": 113,
+          "title": "Logical Sequences",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2230,
+                "questionText": "If all roses are flowers, and some flowers fade quickly, which statement must be true?",
+                "options": [
+                  "All roses fade quickly",
+                  "Some roses fade quickly",
+                  "No roses fade quickly",
+                  "Some roses are flowers"
+                ],
+                "correctAnswer": "Some roses are flowers",
+                "explanation": "Since all roses are flowers, it must be true that some roses are flowers.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Chinese Language (HSK Track)",
+      "modules": [
+        {
+          "id": 114,
+          "title": "HSK 1-3 Vocabulary",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2300,
+                "questionText": "What does '你好' (nǐ hǎo) mean?",
+                "options": ["Goodbye", "Hello", "Thank you", "Sorry"],
+                "correctAnswer": "Hello",
+                "explanation": "你好 (nǐ hǎo) is the standard greeting meaning 'hello'.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2301,
+                "questionText": "Which character means 'water'?",
+                "options": ["火", "水", "土", "木"],
+                "correctAnswer": "水",
+                "explanation": "水 (shuǐ) means water. The other characters mean fire (火), earth (土), and wood (木).",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2302,
+                "questionText": "What is the pinyin for '中国'?",
+                "options": ["zhōng guó", "zhōng guǒ", "zhōng guō", "zhōng guó"],
+                "correctAnswer": "zhōng guó",
+                "explanation": "中国 is pronounced zhōng guó, meaning China.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ]
+          }
+        },
+        {
+          "id": 115,
+          "title": "Sentence Construction",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 2310,
+                "questionText": "Arrange these words to form a correct sentence: 我 / 喜欢 / 吃 / 苹果",
+                "options": [
+                  "我喜欢吃苹果",
+                  "苹果喜欢吃我",
+                  "吃我喜欢苹果",
+                  "苹果吃我喜欢"
+                ],
+                "correctAnswer": "我喜欢吃苹果",
+                "explanation": "Correct sentence structure: Subject (我) + Adverb (喜欢) + Verb (吃) + Object (苹果) = 我喜欢吃苹果 (I like to eat apples).",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 90
+              }
+            ]
+          }
+        },
+        {
+          "id": 116,
+          "title": "Listening Basics",
+          "questions": {
+            "audio": [
+              {
+                "id": 3003,
+                "questionText": "Listen to the audio and select the correct meaning: [Audio would play '今天天气很好']",
+                "options": [
+                  "Today is very hot",
+                  "Today the weather is very good",
+                  "Tomorrow will be sunny",
+                  "Yesterday was cold"
+                ],
+                "correctAnswer": "Today the weather is very good",
+                "explanation": "今天天气很好 (jīntiān tiānqì hěn hǎo) means 'Today the weather is very good'.",
+                "difficulty": 2,
+                "points": 15,
+                "timeLimitSeconds": 120
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "diagnosticTest": {
+    "totalQuestions": 50,
+    "timeLimitMinutes": 90,
+    "passingThreshold": 60,
+    "questionDistribution": {
+      "Mathematics": 15,
+      "English": 15,
+      "Logical & Quantitative Reasoning": 15,
+      "Chinese Language": 5
+    },
+    "questions": [
+      {
+        "id": 5001,
+        "questionText": "Solve: 3x - 7 = 2x + 5",
+        "options": ["x = 10", "x = 12", "x = 14", "x = 16"],
+        "correctAnswer": "x = 12",
+        "subject": "Mathematics",
+        "difficulty": 1
+      },
+      {
+        "id": 5002,
+        "questionText": "Complete the series: 3, 7, 13, 21, 31, ?",
+        "options": ["41", "43", "45", "47"],
+        "correctAnswer": "43",
+        "subject": "Logical & Quantitative Reasoning",
+        "difficulty": 2
+      },
+      {
+        "id": 5003,
+        "questionText": "Choose the correct form: 'The team ___ playing well.'",
+        "options": ["is", "are", "was", "were"],
+        "correctAnswer": "is",
+        "subject": "English",
+        "difficulty": 1
+      },
+      {
+        "id": 5004,
+        "questionText": "What does '谢谢' (xièxie) mean?",
+        "options": ["Hello", "Goodbye", "Thank you", "Sorry"],
+        "correctAnswer": "Thank you",
+        "subject": "Chinese Language",
+        "difficulty": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "csca-prep-web-server",
+  "version": "1.0.0",
+  "description": "Backend server for CSCA Preparatory Test Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "init-db": "node scripts/setup-sqlite.js",
+    "choose-db": "node scripts/choose-database.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^4.13.0",
+    "mysql2": "^3.16.3",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.8.0",
+    "socket.io": "^4.7.4",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "cscaprep",
+    "education",
+    "exam",
+    "preparation"
+  ],
+  "author": "CSCA Prep Team",
+  "license": "MIT"
+}

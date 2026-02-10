@@ -1,0 +1,526 @@
+{
+  "track": "CSCA",
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Programming Foundations",
+      "modules": [
+        {
+          "id": 1,
+          "title": "Variables, Data Types",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 1,
+                "questionText": "Which of the following is NOT a primitive data type in most programming languages?",
+                "options": [
+                  "Integer",
+                  "String",
+                  "Array",
+                  "Boolean"
+                ],
+                "correctAnswer": "Array",
+                "explanation": "Arrays are typically considered composite data types, not primitive types. Primitive types include integers, floats, booleans, and characters/strings.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 2,
+                "questionText": "What is the purpose of a variable in programming?",
+                "options": [
+                  "To execute code repeatedly",
+                  "To store and manipulate data",
+                  "To define program structure",
+                  "To handle user input"
+                ],
+                "correctAnswer": "To store and manipulate data",
+                "explanation": "Variables are named storage locations that hold data which can be modified during program execution.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 3,
+                "questionText": "Which data type would be most appropriate for storing a person's age?",
+                "options": [
+                  "Float",
+                  "String",
+                  "Integer",
+                  "Boolean"
+                ],
+                "correctAnswer": "Integer",
+                "explanation": "Age is typically represented as a whole number, making integer the most appropriate data type.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 45
+              },
+              {
+                "id": 4,
+                "questionText": "What is type casting in programming?",
+                "options": [
+                  "Creating new variables",
+                  "Converting a value from one data type to another",
+                  "Checking variable types",
+                  "Defining custom data types"
+                ],
+                "correctAnswer": "Converting a value from one data type to another",
+                "explanation": "Type casting (or type conversion) is the process of converting a value from one data type to another.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 5,
+                "questionText": "Which of the following is a characteristic of a constant variable?",
+                "options": [
+                  "Can be modified multiple times",
+                  "Must be initialized at declaration",
+                  "Cannot store numeric values",
+                  "Is always global scope"
+                ],
+                "correctAnswer": "Must be initialized at declaration",
+                "explanation": "Constants are variables whose values cannot be changed after initialization, so they must be assigned a value when declared.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 6,
+                "questionText": "What is the difference between declaring and initializing a variable?",
+                "options": [
+                  "No difference, they're the same",
+                  "Declaring creates the variable, initializing gives it a value",
+                  "Initializing creates the variable, declaring gives it a value",
+                  "Declaring is for constants, initializing is for variables"
+                ],
+                "correctAnswer": "Declaring creates the variable, initializing gives it a value",
+                "explanation": "Declaration reserves memory space for a variable, while initialization assigns an initial value to that variable.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 7,
+                "questionText": "Which data type would be best for storing monetary values?",
+                "options": [
+                  "Integer",
+                  "Float",
+                  "Decimal/Double",
+                  "String"
+                ],
+                "correctAnswer": "Decimal/Double",
+                "explanation": "Decimal types are preferred for monetary values due to their precision in handling decimal fractions without floating-point rounding errors.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 8,
+                "questionText": "What is scope in the context of variables?",
+                "options": [
+                  "The data type of a variable",
+                  "The lifetime of a variable",
+                  "The region of code where a variable is accessible",
+                  "The memory location of a variable"
+                ],
+                "correctAnswer": "The region of code where a variable is accessible",
+                "explanation": "Scope defines the portion of a program where a variable can be accessed and referenced.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 9,
+                "questionText": "Which statement about global variables is true?",
+                "options": [
+                  "They can only be accessed within functions",
+                  "They are accessible throughout the entire program",
+                  "They must be declared inside functions",
+                  "They are automatically deleted after function execution"
+                ],
+                "correctAnswer": "They are accessible throughout the entire program",
+                "explanation": "Global variables have global scope and can be accessed from any part of the program.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 10,
+                "questionText": "What is dynamic typing?",
+                "options": [
+                  "Variables that change type automatically",
+                  "Type checking done at runtime instead of compile time",
+                  "Variables that can store multiple types simultaneously",
+                  "Automatic memory management"
+                ],
+                "correctAnswer": "Type checking done at runtime instead of compile time",
+                "explanation": "Dynamic typing means type checking is performed at runtime, allowing variables to hold different types of data throughout program execution.",
+                "difficulty": 3,
+                "points": 10,
+                "timeLimitSeconds": 90
+              }
+            ],
+            "coding": [
+              {
+                "id": 101,
+                "questionText": "Write a program that declares variables of different data types (integer, float, string, boolean) and prints their values and types.",
+                "sampleInput": "",
+                "expectedOutput": "Value: 25, Type: integer\nValue: 3.14, Type: float\nValue: Hello, Type: string\nValue: true, Type: boolean",
+                "difficulty": 1,
+                "points": 20,
+                "timeLimitSeconds": 300
+              },
+              {
+                "id": 102,
+                "questionText": "Create a program that converts temperature from Celsius to Fahrenheit. Use appropriate variables and data types.",
+                "sampleInput": "0",
+                "expectedOutput": "32.0",
+                "difficulty": 1,
+                "points": 20,
+                "timeLimitSeconds": 300
+              },
+              {
+                "id": 103,
+                "questionText": "Write a program that demonstrates the difference between local and global variables. Show how each can be accessed and modified.",
+                "sampleInput": "",
+                "expectedOutput": "Global variable: 10\nLocal variable: 20\nModified global: 15",
+                "difficulty": 2,
+                "points": 25,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "title": "Control Flow",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 11,
+                "questionText": "Which control flow statement is used to execute a block of code repeatedly?",
+                "options": [
+                  "if-else",
+                  "switch",
+                  "for loop",
+                  "return"
+                ],
+                "correctAnswer": "for loop",
+                "explanation": "Loops (for, while, do-while) are used to execute code blocks repeatedly based on conditions.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 12,
+                "questionText": "What is the purpose of a break statement in a loop?",
+                "options": [
+                  "To skip the current iteration",
+                  "To terminate the loop immediately",
+                  "To restart the loop",
+                  "To pause loop execution"
+                ],
+                "correctAnswer": "To terminate the loop immediately",
+                "explanation": "The break statement immediately terminates the loop and transfers control to the statement following the loop.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "coding": [
+              {
+                "id": 104,
+                "questionText": "Write a program that prints numbers from 1 to 100, but for multiples of 3 print 'Fizz', for multiples of 5 print 'Buzz', and for multiples of both 3 and 5 print 'FizzBuzz'.",
+                "sampleInput": "",
+                "expectedOutput": "1\n2\nFizz\n4\nBuzz\nFizz\n...\nFizzBuzz",
+                "difficulty": 2,
+                "points": 25,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Data Structures & Algorithms",
+      "modules": [
+        {
+          "id": 3,
+          "title": "Arrays, Strings",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 20,
+                "questionText": "What is the time complexity of accessing an element in an array by index?",
+                "options": [
+                  "O(1)",
+                  "O(n)",
+                  "O(log n)",
+                  "O(n²)"
+                ],
+                "correctAnswer": "O(1)",
+                "explanation": "Array access by index is constant time O(1) because elements are stored in contiguous memory locations.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              },
+              {
+                "id": 21,
+                "questionText": "Which operation has O(n) time complexity in an array?",
+                "options": [
+                  "Access by index",
+                  "Insertion at beginning",
+                  "Access by value",
+                  "Getting array length"
+                ],
+                "correctAnswer": "Insertion at beginning",
+                "explanation": "Inserting at the beginning requires shifting all existing elements, making it O(n) time complexity.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "coding": [
+              {
+                "id": 105,
+                "questionText": "Write a function that reverses an array in-place without using additional array storage.",
+                "sampleInput": "[1, 2, 3, 4, 5]",
+                "expectedOutput": "[5, 4, 3, 2, 1]",
+                "difficulty": 2,
+                "points": 25,
+                "timeLimitSeconds": 300
+              },
+              {
+                "id": 106,
+                "questionText": "Implement a function to check if a string is a palindrome (reads the same forwards and backwards).",
+                "sampleInput": "racecar",
+                "expectedOutput": "true",
+                "difficulty": 2,
+                "points": 20,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "title": "Linked Lists",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 30,
+                "questionText": "What is the main advantage of linked lists over arrays?",
+                "options": [
+                  "Faster access by index",
+                  "Dynamic size and efficient insertions/deletions",
+                  "Better memory locality",
+                  "Simpler implementation"
+                ],
+                "correctAnswer": "Dynamic size and efficient insertions/deletions",
+                "explanation": "Linked lists can grow dynamically and allow efficient insertions and deletions at any position.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "coding": [
+              {
+                "id": 107,
+                "questionText": "Implement a singly linked list with methods for insertion, deletion, and search.",
+                "sampleInput": "",
+                "expectedOutput": "Linked list operations working correctly",
+                "difficulty": 3,
+                "points": 30,
+                "timeLimitSeconds": 600
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Object Oriented Programming",
+      "modules": [
+        {
+          "id": 5,
+          "title": "Classes & Objects",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 40,
+                "questionText": "What is the relationship between a class and an object?",
+                "options": [
+                  "They are the same thing",
+                  "A class is a blueprint, an object is an instance",
+                  "An object is a blueprint, a class is an instance",
+                  "They are unrelated concepts"
+                ],
+                "correctAnswer": "A class is a blueprint, an object is an instance",
+                "explanation": "A class defines the structure and behavior, while objects are concrete instances created from that blueprint.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "coding": [
+              {
+                "id": 108,
+                "questionText": "Create a class called 'Car' with properties like make, model, year, and methods like start() and stop().",
+                "sampleInput": "",
+                "expectedOutput": "Car class with working methods",
+                "difficulty": 2,
+                "points": 25,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Operating Systems",
+      "modules": [
+        {
+          "id": 6,
+          "title": "Processes vs Threads",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 50,
+                "questionText": "What is the main difference between a process and a thread?",
+                "options": [
+                  "Processes are heavier, threads are lighter",
+                  "Threads have their own memory space, processes share memory",
+                  "Processes execute faster than threads",
+                  "There is no difference"
+                ],
+                "correctAnswer": "Processes are heavier, threads are lighter",
+                "explanation": "Processes are independent execution units with their own memory space, while threads are lightweight execution units within a process sharing memory.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "case": [
+              {
+                "id": 201,
+                "questionText": "A web server needs to handle multiple concurrent client requests. Should you use processes or threads? Justify your answer with pros and cons.",
+                "expectedAnswer": "Threads are generally better for web servers because: 1) Lower memory overhead, 2) Faster context switching, 3) Shared memory for caching, 4) Easier communication. However, processes provide better isolation and crash protection.",
+                "difficulty": 3,
+                "points": 30,
+                "timeLimitSeconds": 600
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Database Management Systems",
+      "modules": [
+        {
+          "id": 7,
+          "title": "SQL Basics",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 60,
+                "questionText": "Which SQL clause is used to filter results?",
+                "options": [
+                  "GROUP BY",
+                  "WHERE",
+                  "ORDER BY",
+                  "HAVING"
+                ],
+                "correctAnswer": "WHERE",
+                "explanation": "The WHERE clause filters records before grouping, while HAVING filters after grouping.",
+                "difficulty": 1,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "coding": [
+              {
+                "id": 109,
+                "questionText": "Write SQL queries to: 1) Create a students table, 2) Insert 3 students, 3) Select all students with age > 20.",
+                "sampleInput": "",
+                "expectedOutput": "SQL queries working correctly",
+                "difficulty": 2,
+                "points": 25,
+                "timeLimitSeconds": 300
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Computer Networks",
+      "modules": [
+        {
+          "id": 8,
+          "title": "OSI & TCP/IP Models",
+          "questions": {
+            "mcqs": [
+              {
+                "id": 70,
+                "questionText": "Which layer of the OSI model is responsible for routing?",
+                "options": [
+                  "Data Link Layer",
+                  "Network Layer",
+                  "Transport Layer",
+                  "Application Layer"
+                ],
+                "correctAnswer": "Network Layer",
+                "explanation": "The Network Layer (Layer 3) is responsible for routing packets between networks.",
+                "difficulty": 2,
+                "points": 10,
+                "timeLimitSeconds": 60
+              }
+            ],
+            "case": [
+              {
+                "id": 202,
+                "questionText": "Explain what happens when you type 'google.com' in a browser and press Enter, covering each layer of the TCP/IP model.",
+                "expectedAnswer": "1. Application Layer: HTTP request generated, 2. Transport Layer: TCP connection established, 3. Network Layer: IP routing, 4. Link Layer: MAC addressing, 5. Physical Layer: Electrical signals. Then response travels back up the layers.",
+                "difficulty": 3,
+                "points": 30,
+                "timeLimitSeconds": 600
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "diagnosticTest": {
+    "totalQuestions": 50,
+    "timeLimitMinutes": 90,
+    "passingThreshold": 60,
+    "questions": [
+      {
+        "id": 1001,
+        "questionText": "What is the time complexity of binary search?",
+        "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+        "correctAnswer": "O(log n)",
+        "subject": "Data Structures & Algorithms",
+        "difficulty": 2
+      },
+      {
+        "id": 1002,
+        "questionText": "Which principle states that a class should have only one reason to change?",
+        "options": ["Open/Closed", "Single Responsibility", "Liskov Substitution", "Interface Segregation"],
+        "correctAnswer": "Single Responsibility",
+        "subject": "Object Oriented Programming",
+        "difficulty": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "track": {
+    "id": 1,
+    "name": "CSCA Core Sciences",
+    "code": "CSCA"
+  },
+  "examinationFormat": {
+    "duration": 60,
+    "totalScore": 100,
+    "language": "Chinese or English",
+    "questionType": "Multiple Choice (Single Answer)",
+    "numberOfQuestions": 48
+  },
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Mathematics",
+      "modules": [
+        {
+          "id": 1,
+          "title": "Sets and Inequalities",
+          "questions": [
+            {
+              "id": "MATH_S1_Q1",
+              "questionText": "If A = {1, 2, 3, 4, 5} and B = {2, 4, 6, 8}, what is A ∩ B?",
+              "options": ["{1, 2, 3, 4, 5, 6, 8}", "{2, 4}", "{1, 3, 5}", "{6, 8}"],
+              "correctAnswer": "{2, 4}",
+              "explanation": "The intersection of sets A and B contains elements that are in both sets: {2, 4}",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 60
+            },
+            {
+              "id": "MATH_S1_Q2",
+              "questionText": "Solve the inequality: x² - 4x + 3 > 0",
+              "options": ["x < 1 or x > 3", "1 < x < 3", "x ≤ 1 or x ≥ 3", "1 ≤ x ≤ 3"],
+              "correctAnswer": "x < 1 or x > 3",
+              "explanation": "Factor: (x-1)(x-3) > 0. The expression is positive when x < 1 or x > 3",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 90
+            },
+            {
+              "id": "MATH_S1_Q3",
+              "questionText": "If set A has 5 elements and set B has 8 elements, what is the maximum number of elements in A ∪ B?",
+              "options": ["5", "8", "13", "40"],
+              "correctAnswer": "13",
+              "explanation": "Maximum occurs when sets are disjoint: |A ∪ B| = |A| + |B| = 5 + 8 = 13",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Functions",
+          "questions": [
+            {
+              "id": "MATH_S2_Q1",
+              "questionText": "If f(x) = 2x + 1 and g(x) = x², what is f(g(2))?",
+              "options": ["9", "11", "17", "25"],
+              "correctAnswer": "9",
+              "explanation": "g(2) = 2² = 4, then f(4) = 2(4) + 1 = 9",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 60
+            },
+            {
+              "id": "MATH_S2_Q2",
+              "questionText": "What is the domain of f(x) = √(x - 4)?",
+              "options": ["x ≥ 4", "x > 4", "x ≤ 4", "x < 4"],
+              "correctAnswer": "x ≥ 4",
+              "explanation": "For square root to be real, x - 4 ≥ 0, so x ≥ 4",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 60
+            },
+            {
+              "id": "MATH_S2_Q3",
+              "questionText": "Find the derivative of f(x) = x³ - 2x² + 3x - 1",
+              "options": ["3x² - 4x + 3", "3x² - 2x + 3", "x³ - 4x + 3", "3x² - 4x"],
+              "correctAnswer": "3x² - 4x + 3",
+              "explanation": "Using power rule: d/dx(x³) = 3x², d/dx(-2x²) = -4x, d/dx(3x) = 3, d/dx(-1) = 0",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 90
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Geometry and Algebra",
+          "questions": [
+            {
+              "id": "MATH_S3_Q1",
+              "questionText": "What is the equation of a line passing through points (1, 2) and (3, 6)?",
+              "options": ["y = 2x", "y = x + 1", "y = 2x - 1", "y = x + 2"],
+              "correctAnswer": "y = 2x",
+              "explanation": "Slope = (6-2)/(3-1) = 2. Using point (1,2): y - 2 = 2(x - 1), so y = 2x",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 90
+            },
+            {
+              "id": "MATH_S3_Q2",
+              "questionText": "If vector a = (2, 3) and vector b = (1, -1), what is a + b?",
+              "options": ["(3, 2)", "(1, 4)", "(3, -2)", "(1, -2)"],
+              "correctAnswer": "(3, 2)",
+              "explanation": "Vector addition: (2+1, 3+(-1)) = (3, 2)",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Probability and Statistics",
+          "questions": [
+            {
+              "id": "MATH_S4_Q1",
+              "questionText": "A fair die is rolled. What is the probability of getting an even number?",
+              "options": ["1/6", "1/3", "1/2", "2/3"],
+              "correctAnswer": "1/2",
+              "explanation": "Even numbers are {2, 4, 6}, so 3 favorable outcomes out of 6 total: 3/6 = 1/2",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            },
+            {
+              "id": "MATH_S4_Q2",
+              "questionText": "If the mean of numbers 2, 4, x, 8 is 5, what is x?",
+              "options": ["4", "5", "6", "7"],
+              "correctAnswer": "6",
+              "explanation": "Mean = (2 + 4 + x + 8)/4 = 5, so 14 + x = 20, therefore x = 6",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Physics",
+      "modules": [
+        {
+          "id": 1,
+          "title": "Mechanics",
+          "questions": [
+            {
+              "id": "PHYS_S1_Q1",
+              "questionText": "A car accelerates from rest to 20 m/s in 5 seconds. What is its acceleration?",
+              "options": ["2 m/s²", "4 m/s²", "5 m/s²", "10 m/s²"],
+              "correctAnswer": "4 m/s²",
+              "explanation": "Acceleration = (v - u)/t = (20 - 0)/5 = 4 m/s²",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 60
+            },
+            {
+              "id": "PHYS_S1_Q2",
+              "questionText": "What is the momentum of a 2 kg object moving at 3 m/s?",
+              "options": ["1 kg·m/s", "3 kg·m/s", "6 kg·m/s", "9 kg·m/s"],
+              "correctAnswer": "6 kg·m/s",
+              "explanation": "Momentum p = mv = 2 × 3 = 6 kg·m/s",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            },
+            {
+              "id": "PHYS_S1_Q3",
+              "questionText": "A force of 10 N is applied to move an object 5 meters. What work is done?",
+              "options": ["2 J", "5 J", "10 J", "50 J"],
+              "correctAnswer": "50 J",
+              "explanation": "Work W = F × d = 10 × 5 = 50 Joules",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Electromagnetism",
+          "questions": [
+            {
+              "id": "PHYS_S2_Q1",
+              "questionText": "What is the resistance of a circuit with 12V battery and 3A current?",
+              "options": ["1 Ω", "3 Ω", "4 Ω", "36 Ω"],
+              "correctAnswer": "4 Ω",
+              "explanation": "Ohm's Law: R = V/I = 12/3 = 4 Ω",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            },
+            {
+              "id": "PHYS_S2_Q2",
+              "questionText": "Two charges of +2C and -2C are placed 1m apart. What is the force between them?",
+              "options": ["Attractive", "Repulsive", "Zero", "Cannot determine"],
+              "correctAnswer": "Attractive",
+              "explanation": "Opposite charges attract each other according to Coulomb's law",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Thermodynamics",
+          "questions": [
+            {
+              "id": "PHYS_S3_Q1",
+              "questionText": "What is the absolute temperature of 27°C in Kelvin?",
+              "options": ["27 K", "300 K", "327 K", "-246 K"],
+              "correctAnswer": "300 K",
+              "explanation": "T(K) = T(°C) + 273 = 27 + 273 = 300 K",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Optics",
+          "questions": [
+            {
+              "id": "PHYS_S4_Q1",
+              "questionText": "What is the angle of incidence when angle of reflection is 30°?",
+              "options": ["0°", "30°", "60°", "90°"],
+              "correctAnswer": "30°",
+              "explanation": "Law of reflection: angle of incidence = angle of reflection = 30°",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 30
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Modern Physics",
+          "questions": [
+            {
+              "id": "PHYS_S5_Q1",
+              "questionText": "What particle is emitted during beta decay?",
+              "options": ["Alpha particle", "Beta particle", "Gamma ray", "Neutron"],
+              "correctAnswer": "Beta particle",
+              "explanation": "Beta decay emits beta particles (electrons or positrons)",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chemistry",
+      "modules": [
+        {
+          "id": 1,
+          "title": "Basic Chemical Concepts and Calculations",
+          "questions": [
+            {
+              "id": "CHEM_S1_Q1",
+              "questionText": "What is the molar mass of H₂O?",
+              "options": ["16 g/mol", "18 g/mol", "20 g/mol", "22 g/mol"],
+              "correctAnswer": "18 g/mol",
+              "explanation": "H₂O = 2(1) + 16 = 18 g/mol",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 45
+            },
+            {
+              "id": "CHEM_S1_Q2",
+              "questionText": "How many moles are in 44g of CO₂?",
+              "options": ["0.5 mol", "1 mol", "2 mol", "44 mol"],
+              "correctAnswer": "1 mol",
+              "explanation": "CO₂ molar mass = 12 + 2(16) = 44 g/mol. Moles = mass/molar mass = 44/44 = 1 mol",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Properties and Reactions of Substances",
+          "questions": [
+            {
+              "id": "CHEM_S2_Q1",
+              "questionText": "Which of the following is a redox reaction?",
+              "options": [
+                "NaCl → Na⁺ + Cl⁻",
+                "HCl + NaOH → NaCl + H₂O",
+                "2H₂ + O₂ → 2H₂O",
+                "NH₃ + HCl → NH₄Cl"
+              ],
+              "correctAnswer": "2H₂ + O₂ → 2H₂O",
+              "explanation": "Hydrogen is oxidized (0 to +1) and oxygen is reduced (0 to -2)",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 90
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Chemical Theories and Laws",
+          "questions": [
+            {
+              "id": "CHEM_S3_Q1",
+              "questionText": "What is the electron configuration of Carbon (Z=6)?",
+              "options": [
+                "1s² 2s² 2p²",
+                "1s² 2s² 2p¹",
+                "1s² 2s¹ 2p³",
+                "1s¹ 2s² 2p³"
+              ],
+              "correctAnswer": "1s² 2s² 2p²",
+              "explanation": "Carbon has 6 electrons: 2 in 1s, 2 in 2s, and 2 in 2p orbitals",
+              "difficulty": 2,
+              "points": 3,
+              "timeLimitSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Chemical Experiments and Applications",
+          "questions": [
+            {
+              "id": "CHEM_S4_Q1",
+              "questionText": "Which safety equipment is essential when working with acids?",
+              "options": ["Gloves", "Sunglasses", "Cotton clothes", "Open-toed shoes"],
+              "correctAnswer": "Gloves",
+              "explanation": "Acid-resistant gloves protect hands from chemical burns",
+              "difficulty": 1,
+              "points": 2,
+              "timeLimitSeconds": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "diagnosticTest": {
+    "totalQuestions": 48,
+    "timeLimitMinutes": 60,
+    "passingThreshold": 70,
+    "questions": [
+      {
+        "id": "DIAG_MATH_1",
+        "questionText": "If f(x) = 2x² - 3x + 1, what is f(2)?",
+        "options": ["3", "5", "7", "9"],
+        "correctAnswer": "3",
+        "explanation": "f(2) = 2(4) - 3(2) + 1 = 8 - 6 + 1 = 3",
+        "difficulty": 1,
+        "points": 2,
+        "timeLimitSeconds": 60
+      },
+      {
+        "id": "DIAG_PHYS_1",
+        "questionText": "What is the acceleration due to gravity on Earth?",
+        "options": ["8.9 m/s²", "9.8 m/s²", "10.8 m/s²", "11.8 m/s²"],
+        "correctAnswer": "9.8 m/s²",
+        "explanation": "Standard gravity on Earth is approximately 9.8 m/s²",
+        "difficulty": 1,
+        "points": 2,
+        "timeLimitSeconds": 30
+      },
+      {
+        "id": "DIAG_CHEM_1",
+        "questionText": "What is the chemical formula for water?",
+        "options": ["H₂O", "CO₂", "O₂", "H₂"],
+        "correctAnswer": "H₂O",
+        "explanation": "Water consists of 2 hydrogen atoms and 1 oxygen atom",
+        "difficulty": 1,
+        "points": 2,
+        "timeLimitSeconds": 30
+      }
+    ]
+  }
+}
